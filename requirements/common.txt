@@ -1,6 +1,6 @@
 arrow==1.0.3
 assertlib==0.3.2
-attrs==20.2.0
+attrs==20.3.0
 beautifulsoup4==4.9.3
 celery==5.0.5
 contextlib2==0.6.0.post1
