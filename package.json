@@ -62,7 +62,7 @@
     "datatables.net-fixedcolumns": "^3.3.2",
     "datatables.net-fixedcolumns-bs": "^3.3.2",
     "jquery": "^3.5.0",
-    "jsrender": "~1.0.7",
+    "jsrender": "~1.0.11",
     "lodash": "^4.17.21",
     "multiple-select": "~1.5.2",
     "ng-dialog": "^1.4.0",
