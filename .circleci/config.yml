@@ -40,6 +40,4 @@ workflows:
   test:
     jobs:
       - build-py
-      - build-js:
-          requires:
-            - build-py
+      - build-js
