@@ -61,7 +61,7 @@
     "datatables.net-buttons-bs": "^1.7.0",
     "datatables.net-fixedcolumns": "^3.3.2",
     "datatables.net-fixedcolumns-bs": "^3.3.2",
-    "jquery": "^3.5.0",
+    "jquery": "^3.6.0",
     "jsrender": "~1.0.11",
     "lodash": "^4.17.21",
     "multiple-select": "~1.5.2",
