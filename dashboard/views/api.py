@@ -47,7 +47,7 @@ def aggregate_scores(user, test, cycles, formulation, keys, count_values, filter
     grouped_objects = pydash.group_by(score_objects, lambda x: x["cycle"])
 
     def get_count_key(value):
-        value_as_dict = json.loads(value.get("data"))
+        value_as_dict = value.get("data")
         return value_as_dict.get(test, {}).get(formulation, None) if type(
             value_as_dict
         ) is dict else None

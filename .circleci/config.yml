@@ -3,16 +3,16 @@ version: 2
 jobs:
   build-py:
     docker:
-      - image: themattrix/tox
+      - image: cimg/python:3.9.2
     working_directory: ~/py
     steps:
       - checkout
       - run: cat requirements/*.txt > all.txt
       - run: cat all.txt
-      - run: apt-get update && apt-get install libpq-dev -y
       - restore_cache:
           keys:
             - py-dependencies-{{ checksum "all.txt" }}
+      - run: pip install tox
       - run: tox
       - save_cache:
           paths:
