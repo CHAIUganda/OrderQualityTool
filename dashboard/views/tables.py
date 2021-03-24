@@ -3,7 +3,7 @@ import json
 
 from django.db.models import Q
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 from django.views.generic import View
 from django_datatables_view.base_datatable_view import BaseDatatableView
 from pydash import py_
@@ -165,7 +165,7 @@ class ScoreDetailsView(View):
         response_data, template_name, score, combination = self.get_context_data(
             request, id, column
         )
-        return render_to_response(template_name, context=response_data)
+        return render(request, template_name, context=response_data)
 
 
 def results_as_array(response_data, score, combination):

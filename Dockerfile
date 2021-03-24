@@ -10,11 +10,11 @@ COPY webpack.config.js /usr/src/app/
 COPY uisrc /usr/src/app/uisrc/
 RUN npm run build
 
-FROM python:3.7-alpine
+FROM python:3.9-alpine
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 ENV PHANTOMJS_ARCHIVE="phantomjs.tar.gz"
-RUN apk add --no-cache curl bzip2 postgresql-dev postgresql-dev gcc musl-dev linux-headers \
+RUN apk add --no-cache build-base curl bzip2 git postgresql-dev postgresql-dev gcc musl-dev linux-headers \
     && curl -Lk -o $PHANTOMJS_ARCHIVE https://github.com/fgrehm/docker-phantomjs2/releases/download/v2.0.0-20150722/dockerized-phantomjs.tar.gz \
 	&& tar -xf $PHANTOMJS_ARCHIVE -C /tmp/ \
 	&& cp -R /tmp/etc/fonts /etc/ \

@@ -21,4 +21,7 @@ coverage/
 *$py.class
 **/*.pyc
 deploy_docs/
-dashboard/static/dist
+dashboard/static/dist/
+reports/
+test_sqlite.db
+local_settings.py

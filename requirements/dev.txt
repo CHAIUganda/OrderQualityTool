@@ -1,11 +1,10 @@
 -r common.txt
-coverage==5.0.1
-django-jenkins
+coverage==5.5
 django-nose
 django-webtest==1.9.7
 mock
 nose-parameterized==0.6.0
 nose-timer
 pyhamcrest
-responses==0.10.9
-safety==1.8.5
+responses==0.13.1
+safety==1.10.3

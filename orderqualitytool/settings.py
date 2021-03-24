@@ -129,7 +129,7 @@ try:
 except ImportError:
     pass
 
-if ("test" in sys.argv) or ("jenkins" in sys.argv):
+if ("test" in sys.argv):
     DATABASES = {
         "default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "test_sqlite.db"}
     }
